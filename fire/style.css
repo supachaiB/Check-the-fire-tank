@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'YourFontName', sans-serif; /* ใช้ฟอนต์ */
+}
+@font-face {
+    font-family: 'YourFontName';
+    src: url('path/to/font.woff2') format('woff2'), /* สำหรับเวอร์ชันใหม่ */
+         url('path/to/font.woff') format('woff'); /* สำหรับเวอร์ชันเก่า */
+    /* เพิ่มรายละเอียดเพิ่มเติมได้ตามต้องการ เช่น font-weight, font-style */
+}
+
+
+nav {
+    background: #FFFFFA;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1; 
+}
+
+.tltle p {
+    margin-left: 20px; 
+    font-size: 20px; /* ปรับขนาดตามที่ต้องการ */
+    font-weight: 900;
+    color: #C17272;
+}
+
+
+h1 {
+    font-size: 32px; /* ปรับขนาดตามที่ต้องการ */
+}
+
+.icon-menu {
+    margin-right: 20px; 
+}
+
+nav .tltle h1 {
+    font-size: 24px;
+    
+}
+
+.main {
+    
+    background: #FFF0F0;
+    height: 770px;
+    position: relative; 
+    z-index: 0;
+    
+}
+
+.txt {
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.txt p {
+    margin-bottom: 10px; /* เว้นระยะห่างด้านล่างของ <p> ใน .txt 20px */
+}
+
+.container-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 470px;
+}
+.pic {
+    border: solid red 1px;
+    border-radius: 8px;
+    height:  380px;
+    width: 270px;
+}
+
+footer {
+    padding-top: 5px;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.btn-create {
+    border-radius: 8px;
+    background-color: rgba(1, 132, 127, 1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.17);
+    max-width: 350px;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 100px;
+    font: 400 20px Inter, sans-serif;
+}
+
+.btn-download {
+    margin-top: 5px;
+    border-radius: 8px;
+    background-color: rgba(1, 132, 127, 1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.17);
+    max-width: 350px;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 100px;
+    font: 400 20px Inter, sans-serif;
+  }
