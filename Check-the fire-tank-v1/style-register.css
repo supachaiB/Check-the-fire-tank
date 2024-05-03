@@ -8,6 +8,7 @@ body {
     margin: 0;
     background-color: #FFF0F0;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 header {
@@ -20,8 +21,16 @@ header {
     height: 65px;
     align-items: center;
     
-        & h1 {
+        
+
+        & .title {
+
             padding-left: 30px;
+        
+            & p {
+                margin-top: 2px;
+                
+            }
         }
 
         & .icon-home {
@@ -30,23 +39,19 @@ header {
         
 }
 
-.title {
-    margin-top: 60px;
-    margin-left: 25px;
-
-    & h2 {
-        font-size: 20px;
-    }
-
-    & p {
-        margin-top: 5px;
-        
-    }
+.text-center {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 
+
+
 .signup {
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 20px;
 
     & input {

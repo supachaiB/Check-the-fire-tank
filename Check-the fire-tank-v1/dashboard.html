@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h2>ตรวจสอบถังดับเพลิง</h2>
+            <p>Check the fire tank</p>
+        </div>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">เข้าสู่ระบบ</a>
+                </li>
+                <li>
+                    <a href="register.html">สมัครเป็นสมาชิก</a>
+                </li>
+                <li>
+                    <a href="">คู่มือเบื้องต้น</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        menu = document.querySelector(".menu");
+        menu.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
