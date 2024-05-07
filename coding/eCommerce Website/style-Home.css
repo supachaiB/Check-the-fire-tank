@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    height: 95px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0 54px;
+    border: solid 1px red;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+
+} 
+.logo p {
+    padding-left: 5px;
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.menu {
+    display: flex;
+    padding: 0 50px;
+
+    
+}
+
+.menu a {
+    text-decoration: none; /* ลบเส้นใต้ */
+    color: black; /* เปลี่ยนสีเป็นดำ */
+    font-size: 16px;
+
+    padding: 0 30px;
+    
+}
+
+.icon {
+    display: flex;
+    padding-left: 80px;
+    
+}
+
+.icon a {
+    padding: 0 23.5px;
+}
+
+
+.bg1-img {
+    position: relative;
+    width: 100%;
+}
+
+.container1 {
+    position: absolute;
+    border-radius: 10px;
+    background-color: #fff3e3;
+    width: 643px;
+    padding: 65px  42px ;
+    top: 250px;
+    right: 60px;
+}
+
+.bg-color {
+    padding: 0 20px;
+}
+
+.bg-color .p-title1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.bg-color h1 {
+    margin-top: 19px;
+    color: var(--Primary, #b88e2f);
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 55px;
+    font-family: Poppins, sans-serif;
+}
+
+.bg-color .p-content1 {
+    margin-top: 30px;
+}
+
+.btn-buy-now {
+    align-items: center;
+    background-color: var(--Primary, #b88e2f);
+    margin-top: 51px;
+    width: 222px;
+    max-width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 25px 60px;
+    font-weight: 600;
+}
+
+.box-1 {
+    margin-top: 40px;
+    height: 675px;
+    border: solid 1px red;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box-1 .box-1-txt {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    height: 100px;
+
+}
+
+.box-1 .box-1-txt h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.box-1 .box-1-txt p {
+    height: 21px;
+}
+
+.box-1 .box-1-img  {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box-1 .box-1-img .img-box-1 {
+    width: 380;
+    height: 480px;
+}
+
+.box-1 .box-1-img p {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.img-txt {
+    display: flex;
+    flex-direction: column; /* เพิ่มเพื่อจัดให้เนื้อหาภายใน img-txt อยู่ในแนวตั้ง */
+    justify-content: center;
+    align-items: center;
+}
+
