@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form-check.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+        <header>
+            <div class="title">
+                <h2>ตรวจสอบถังดับเพลิง</h2>
+                <p>Check the fire tank</p>
+            </div>
+            <img class="icon-home" src="img/icon _home.svg" alt="">
+        </header>
+
+    <div class="container">
+        <form action="#" >   
+            <div class="text-show">
+                <h2>เครื่องดับเพลิง</h2>
+                <p>เครื่องที่ : 1</p>
+                <p>ประเภท : ผงเคมีแห้ง</p>
+                <p>ตำแหน่ง : 10 ชั้น ชั้นที่ : 1</p>
+            </div>
+
+        
+            <div class="check-box">
+                <div class="box">
+                    <h3>มาตรวัด</h3>
+                    <div class="check-option">
+                        <div class="check">
+                            <input type="radio" id="check-normal" name="check-meter" checked>
+                            <label for="check-normal">ปกติ</label>
+                        </div>
+                        <div class="check">
+                            <input type="radio" id="check-not-normal" name="check-meter">
+                            <label for="check-not-normal">ไม่ปกติ</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <h3>สภาพผงเคมี</h3>
+                    <div class="check-option">
+                        <div class="check">
+                            <input type="radio" id="check-normal" name="check-Substance" checked>
+                            <label for="check-normal">ปกติ</label>
+                        </div>
+                        <div class="check">
+                            <input type="radio" id="check-not-normal" name="check-Substance">
+                            <label for="check-not-normal">ไม่ปกติ</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <h3>กรณีถังดับเพลิงมีความเสียหาย</h3>
+                    <div class="check-option">
+                        <div class="check">
+                            <input type="radio" id="check-no" name="check-case" checked>
+                            <label for="check-no">ไม่มี</label>
+                        </div>
+                        <div class="check">
+                            <input type="radio" id="check-change" name="check-case">
+                            <label for="check-change">ต้องเปลี่ยน</label>
+                        </div>
+                        <div class="check">
+                            <input type="radio" id="check-repair" name="check-case">
+                            <label for="check-repair">ต้องซ่อม</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="input-box">
+                <label for="">ชื่อผู้ตรวจสอบ</label>
+                <input type="text" placeholder="ชื่อผู้ตรวจสอบ...">
+            </div>
+            <div class="input-box">
+                <label for="">รายละเอียดการซ่อม</label>
+                <input type="text" placeholder="รายละเอียดการซ่อม...">
+            </div>
+            
+            <button>บันทึกการตรวจเช็ค</button>
+
+
+        </form>
+    </div>
+    
+
+
+</body>
+</html>

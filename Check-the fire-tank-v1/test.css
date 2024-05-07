@@ -1,0 +1,59 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+article {
+    flex: 2;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    footer {
+        font-size: 12px;
+    }
+}

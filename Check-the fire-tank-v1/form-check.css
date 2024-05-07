@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    background-color: #FFF0F0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #C17272;
+    font-size: 12px;
+    padding: 0 30px;
+    align-items: center;
+    
+
+        & .title {
+
+            padding-left: 30px;
+        
+            & p {
+                margin-top: 2px;
+                
+            }
+        }
+
+        & .icon-home {
+            padding-right: 30px;
+        }
+        
+}
+.container {
+    min-height: 100%;
+    padding: 25px;
+
+    & form {
+        margin-top: 30px;
+        padding: 10px 0px;
+
+        & .input-box {
+            width: 100%;
+            margin-top: 20px;
+        
+            & label {
+                color: #333;
+            }
+
+            & input {
+                position: relative;
+                height: 50px;
+                width: 100%;
+                outline: none;
+                font-size: 1rem;
+                color: #707070;
+                margin-top: 8px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 0 15px;
+            }
+        }   
+    }
+}
+
+
+form :where(.check-option, .check) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+form .check {
+    column-gap: 5px;
+}
+form .check-box {
+    margin-top: 20px;
+
+    & .box {
+        margin-top: 20px;
+    }
+}
+.check-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+button {
+
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    height: 55px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #01847F;
+    transition: all 0.5s ease;
+}
+button:hover {
+    background-color: #00615e;
+}
+
+
+
+
+
+
+
