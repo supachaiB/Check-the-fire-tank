@@ -2,14 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body, html {
     height: 100%;
-    background-color: #FFF0F0;
-    font-family: 'Roboto', sans-serif;
-    
 }
-
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FFF0F0;
+}
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction:column;
+}
 
 header {
     height: 65px;
@@ -20,34 +28,44 @@ header {
     font-size: 12px;
     padding: 0 30px;
     align-items: center;
+
+    & .title {
     
-
-        & .title {
-
-            padding-left: 30px;
-        
-            & p {
-                margin-top: 2px;
-                
-            }
+        & p {
+            margin-top: 2px;
+            
         }
+    }
 
-        & .icon-home {
-            padding-right: 30px;
-        }
-        
+
+    & .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    & .menu .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
 }
+
+
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
 .container {
-    min-height: 100%;
-    padding: 25px;
 
     & form {
-        margin-top: 30px;
-        padding: 10px 0px;
+        padding: 0px 30px;
 
         & .input-box {
             width: 100%;
-            margin-top: 20px;
+            margin-top: 50px;
         
             & label {
                 color: #333;
@@ -69,6 +87,9 @@ header {
     }
 }
 
+form .text-show p {
+    margin-top: 15px;
+}
 
 form :where(.check-option, .check) {
     display: flex;
@@ -78,8 +99,12 @@ form :where(.check-option, .check) {
 form .check {
     column-gap: 5px;
 }
+
+form :where(.check input, .check label) {
+    cursor: pointer;
+}
 form .check-box {
-    margin-top: 20px;
+    margin-top: 50px;
 
     & .box {
         margin-top: 20px;
@@ -92,29 +117,26 @@ form .check-box {
     margin-bottom: 8px;
 }
 
-button {
 
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
-    height: 55px;
-    width: 100%;
-    font-size: 1rem;
-    border: none;
-    margin-top: 50px;
-    border-radius: 8px;
-    font-weight: 400;
-    color: #fff;
-    background-color: #01847F;
-    transition: all 0.5s ease;
+footer {
+    align-items: center;
+    padding: 40px 30px;
+
+    & button {
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        height: 55px;
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #01847F;
+        transition: all 0.5s ease;
+    }
+    & button:hover {
+        background-color: #00615e;
+    }
 }
-button:hover {
-    background-color: #00615e;
-}
-
-
-
-
-
-
-

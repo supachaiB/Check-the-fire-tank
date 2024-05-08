@@ -2,114 +2,126 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body {
-    height: 100vh;
-    margin: 0;
-    background-color: #FFF0F0;
     font-family: 'Roboto', sans-serif;
-    
 }
-
-header {
+body, html {
     height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #FFF0F0;
+}
+header {
+    height: 65px;
     display: flex;
     justify-content: space-between;
     color: #fff;
     background-color: #C17272;
     font-size: 12px;
-    height: 65px;
+    padding: 0 30px;
     align-items: center;
     
-        
+
 
         & .title {
-
-            padding-left: 30px;
         
             & p {
                 margin-top: 2px;
                 
             }
-        }
 
-        & .icon-home {
-            padding-right: 30px;
         }
         
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+section {
+    align-items: center;
+    padding: 15px;
 }
 
 .text-center {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
     font-weight: bold;
     font-size: 25px;
+    color: #C17272;
 }
 
+.container {
+    flex: 1; /* ทำให้ container ขยายตามขนาดของ wrapper */
+    display: flex;
+    flex-direction: column;
 
+    
+    & form {
+        padding: 0px 30px;
 
+        & .input-box {
+            width: 100%;
+            margin-top: 10px;
+        
+            & label {
+                color: #333;
+            }
 
-.signup {
-    margin-top: 20px;
-    padding: 20px;
-
-    & input {
-        width: 60%;
-        height: 35px;
-        background: #fff;
-        justify-content: center;
-        display: flex;
-        margin: 20px auto;
-        padding: 10px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
+            & input {
+                position: relative;
+                height: 40px;
+                width: 100%;
+                outline: none;
+                font-size: 1rem;
+                color: #707070;
+                margin-top: 8px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 0 15px;
+            }
+        }   
     }
 }
 
-.btn-con {
-    text-align: center; /* จัดตำแหน่งปุ่ม Sign Up และ Sign In ให้อยู่ตรงกลาง */
- 
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+
+    &  .btn-sign-up {
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        height: 55px;
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 400;
+        color: #fff;
+        background: #C17272;
+        transition: all 0.5s ease;
+    }
+    
+    &  .btn-sign-in {
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        height: 55px;
+        width: 100%;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        font-weight: 400;
+        color: #C17272;
+        background-color: #FFF0F0;
+        transition: all 0.5s ease;
+    }
 }
-
-.btn-sign-up {
-    width: 60%;
-    height: 40px;
-    margin: 10px auto;
-    justify-content: center;
-    display: block;
-    color: #fff;
-    background: #C17272;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-.btn-sign-in {
-    width: 60%;
-    height: 40px;
-    margin: 10px auto;
-    justify-content: center;
-    display: block;
-    color: #C17272;
-    font-size: 1em;
-    font-weight: bold;
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-
-
 
 
 

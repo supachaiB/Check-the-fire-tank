@@ -10,35 +10,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper">
+        <div class="container">
             <header>
                 <div class="title">
                     <h2>ตรวจสอบถังดับเพลิง</h2>
                     <p>Check the fire tank</p>
                 </div>
-                <img class="icon-home" src="img/icon _home.svg" alt="">
+                <div class="icon-home">
+                    <a href="dashboard.html">
+                        <img src="img/icon _home.svg" alt="Home">
+                    </a>
+                </div>
             </header>  
 
-            <div class="text-center">
-                <p>register</p>
-            </div>
-    
-            <div class="signup">
-                <form action="">
-                    <input type="text" name="txt" placeholder="ชื่อ" required="">
-                    <input type="text" name="txt" placeholder="นามสกุล" required="">
-                    <input type="text" name="txt" placeholder="อีเมล" required="">
-                    <input type="text" name="txt" placeholder="รหัสผ่าน" required="">
-                    <input type="text" name="txt" placeholder="รหัสผ่านอีกครั้ง" required="">
-                    <input type="text" name="txt" placeholder="ตำแหน่ง" required="">
-                    <input type="text" name="txt" placeholder="หน่วยงาน" required="">
-                    <input type="text" name="txt" placeholder="เลือกถังดับเพลิงที่รับผิดชอบ" required="">
-                </form>
-            </div>
+            <section>
+                <div class="text-center">
+                    <p>register</p>
+                </div>
+            </section>
                 
-    
+
+            <main>
+                <form action="">
+                    <div class="input-box">
+                        <label for="">ชื่อ</label>
+                        <input type="text" name="txt" placeholder="ชื่อ" required="">
+                    </div>
+                    <div class="input-box">
+                        <label for="">นามสกุล</label>
+                        <input type="text" name="txt" placeholder="นามสกุล" required="">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="">อีเมล</label>
+                        <input type="text" name="txt" placeholder="อีเมล" required="">
+                    </div>
+                    <div class="input-box">
+                        <label for="">รหัสผ่าน</label>
+                        <input type="text" name="txt" placeholder="รหัสผ่าน" required="">
+                    </div>
+                    <div class="input-box">
+                        <label for="">รหัสผ่านอีกครั้ง</label>
+                        <input type="text" name="txt" placeholder="รหัสผ่านอีกครั้ง" required="">
+                    </div>
+                    <div class="input-box">
+                        <label for="">ตำแหน่ง</label>
+                        <input type="text" name="txt" placeholder="ตำแหน่ง" required="">
+                    </div>
+                    <div class="input-box">
+                        <label for="">หน่วยงาน</label>
+                        <input type="text" name="txt" placeholder="หน่วยงาน" required="">
+                    </div>
+                    <div class="input-box">
+                        <label for="">เลือกถังดับเพลิงที่รับผิดชอบ</label>
+                        <input type="text" name="txt" placeholder="เลือกถังดับเพลิงที่รับผิดชอบ" required="">
+                    </div>
+                </form>
+            </main>
+            
             <footer class="btn-con">
                 <button class="btn-sign-up">Sign Up</button>
                 <button class="btn-sign-in">Sign In</button>
-            </footer>  
+            </footer>
+        </div>
+    </div>
+              
 </body>
 </html>

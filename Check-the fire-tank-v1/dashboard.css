@@ -7,15 +7,14 @@
 }
 
 header {
-    width: 100%;
-    height: 80px;
+    height: 65px;
     display: flex;
-    align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     color: #fff;
-    background: #C17272;
+    background-color: #C17272;
     font-size: 12px;
     padding: 0 30px;
+    align-items: center;
     
     & .menu {
         display: block;
@@ -32,7 +31,7 @@ header {
     & .nav-bar {
         height: 0px;
         position: absolute;
-        top: 80px;
+        top: 64px;
         left: 0;
         right: 0;
         width: 100vw;
